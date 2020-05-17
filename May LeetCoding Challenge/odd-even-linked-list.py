@@ -26,7 +26,7 @@ class Solution:
     def __init__(self):
         self.head = None
 
-    def oddEvenList(self, head):
+    def oddEvenList(self, head):    # oddEvenList(self, head: ListNode) -> ListNode
         if not head:
             return None
         elif not head.next:
