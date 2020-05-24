@@ -26,7 +26,8 @@ Example 2:
     Output: 3
 
 Follow up:
-What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
+What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently?
+How would you optimize the kthSmallest routine?
 """
 
 # Definition for a binary tree node.

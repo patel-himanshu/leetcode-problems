@@ -14,11 +14,46 @@ Example 1:
                 8
                / \ 
               5   10
-             / \   \ 
-            1   7   12
+             / \    \ 
+            1   7    12
 
 Constraints:
     (1) 1 <= preorder.length <= 100
     (2) 1 <= preorder[i] <= 10^8
     (3) The values of preorder are distinct.
 """
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+class Solution:
+    def bstFromPreorder(self, preorder):    # bstFromPreorder(self, preorder: List[int]) -> TreeNode
+        bst_size = len(preorder)
+        root = TreeNode(preorder[0])
+        stack = [root]
+
+        for i in range(1, bst_size):
+            temp = None
+
+            while stack and preorder[i] > stack[-1].val:
+                temp = stack.pop()
+            
+            if temp:
+                temp.right = TreeNode(preorder[i])
+                stack.append(temp.right)
+            else:
+                temp = stack[-1]
+                temp.left = TreeNode(preorder[i])
+                stack.append(temp.left)
+            
+            # stack.append(TreeNode(preorder[i]))
+            """ 
+            Above statement just appends a node in stack.
+            This causes the loss of linkage between the nodes.
+            We just have individual nodes in the stack.
+            """
+
+        return root
