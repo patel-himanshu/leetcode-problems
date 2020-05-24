@@ -20,7 +20,7 @@ def findJudge(N, trust):
             return i
     return -1
 
-'''
+"""
 Let a person mentioned on X-axis be 'x', and that on Y-axis be 'y'
 Each cross represents that person 'x' is trusted by person 'y'
 
@@ -34,7 +34,7 @@ Person 2: Trusts {1,3}, Trusted by {1}
 Person 3: Trusts {}, Trusted by {1,2,4}
 Person 4: Trusts {1,3}, Trusted by {1}
 Hence, person 3 is the town judge
-'''
+"""
 
 print(findJudge(2, [[1,2]]), end = '\n')
 #   1 2

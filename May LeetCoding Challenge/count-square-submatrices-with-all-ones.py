@@ -1,6 +1,6 @@
 # Question: https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/536/week-3-may-15th-may-21st/3336/
 
-'''
+"""
 Given a m * n matrix of ones and zeros, return how many square submatrices have all ones.
 
 Example 1:
@@ -34,7 +34,7 @@ Constraints:
     (1) 1 <= arr.length <= 300
     (2) 1 <= arr[0].length <= 300
     (3) 0 <= arr[i][j] <= 1
-'''
+"""
 
 class Solution:
     def countSquares(self, matrix): # countSquares(self, matrix: List[List[int]]) -> int

@@ -1,6 +1,6 @@
 # Question: https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/537/week-4-may-22nd-may-28th/3337/
 
-'''
+"""
 Given a string, sort it in decreasing order based on the frequency of characters.
 
 Example 1:
@@ -23,7 +23,7 @@ Example 3:
     Explanation:
         "bbaA" is also a valid answer, but "Aabb" is incorrect.
         Note that 'A' and 'a' are treated as two different characters.
-'''
+"""
 
 from collections import Counter
 from operator import itemgetter

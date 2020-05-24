@@ -1,6 +1,6 @@
 # Question: https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/536/week-3-may-15th-may-21st/3334/
 
-'''
+"""
 Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock's price for the current day.
 The span of the stock's price today is defined as the maximum number of consecutive days (starting from today and going backwards) 
 for which the price of the stock was less than or equal to today's price.
@@ -27,7 +27,7 @@ Note:
     (2) There will be at most 10000 calls to StockSpanner.next per test case.
     (3) There will be at most 150000 calls to StockSpanner.next across all test cases.
     (4) The total time limit for this problem has been reduced by 75% for C++, and 50% for all other languages.
-'''
+"""
 
 class StockSpanner:
 

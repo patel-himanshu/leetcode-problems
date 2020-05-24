@@ -1,6 +1,6 @@
 # Question: https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/536/week-3-may-15th-may-21st/3332/
 
-'''
+"""
 Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
 Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.
 The order of output does not matter.
@@ -20,7 +20,7 @@ Example 2:
         The substring with start index = 0 is "ab", which is an anagram of "ab".
         The substring with start index = 1 is "ba", which is an anagram of "ab".
         The substring with start index = 2 is "ab", which is an anagram of "ab".
-'''
+"""
 from collections import Counter
 
 class Solution:

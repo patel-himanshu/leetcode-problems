@@ -31,7 +31,7 @@ def floodFill(image, sr, sc, newColor):
         return(image)
 
 print(floodFill([[1,1,1],[1,1,0],[1,0,1]], 1,1,2))    # Output: [[2,2,2],[2,2,0],[2,0,1]]
-'''
+"""
 Image is represented as following, with the number at each cell denotes its color.
     0  1  2
 0 [ 1  1  1 ]
@@ -39,10 +39,10 @@ Image is represented as following, with the number at each cell denotes its colo
 2 [ 1  0  1 ]
 
 Cells to be floodfilled: (0,0), (0,1), (0,2), (1,0), (1,1), (2,0)
-'''
+"""
 
 print(floodFill([[1,2,1],[1,1,3],[1,4,1]], 2,0,2))    # Output: [[2,2,1],[2,2,3],[2,4,1]]
-'''
+"""
 Image is represented as following, with the number at each cell denotes its color.
     0  1  2
 0 [ 1  2  1 ]
@@ -50,10 +50,10 @@ Image is represented as following, with the number at each cell denotes its colo
 2 [ 1  4  1 ]
 
 Cells to be floodfilled: (0,0), (0,1), (1,0), (1,1), (2,0)
-'''
+"""
 
 print(floodFill([[0,0,0], [0,1,1]], 1,1,1))           # Output: [[0,0,0], [0,1,1]]
-'''
+"""
 Image is represented as following, with the number at each cell denotes its color.
     0  1  2
 0 [ 0  0  0 ]
@@ -62,4 +62,4 @@ Image is represented as following, with the number at each cell denotes its colo
 Here the starting pixel already has same color as the newColor
 This eans no change will occur due to floodfilling
 Hence, returning original image list as it is.
-'''
+"""
