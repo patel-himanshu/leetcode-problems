@@ -28,8 +28,6 @@ class Solution:
                 ans.append(1 + ans[i>>1])
             else:
                 ans.append(ans[i>>1])
-            # Above 4 statements can also be written as
-            # ans.append( ans[i>>1] + (i&1) )
         return ans
 
 """
