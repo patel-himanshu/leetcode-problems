@@ -59,6 +59,13 @@ class Solution:
             total_cost += cost_diff[i]
         return total_cost
 
+        """ 
+        ================ Alternate method =====================
+        total = sum([i for i,j in costs])
+        diff = [j-i for i,j in costs]
+        return total + sum(sorted(diff)[:len(costs)//2])
+        """
+
 inputs = [
     [[10,20],[30,200],[400,50],[30,20]],
     [[259,770],[448,54],[926,667],[184,139],[840,118],[577,469]],
