@@ -66,6 +66,16 @@ class Solution:
 
         return total_profit
 
+        """ 
+        ================ Alternate method =====================
+        profits = 0
+        for i in range(len(prices)-1):
+            profits += max(prices[i+1]-prices[i], 0)
+        return profits
+        ================ Alternate method =====================
+        return sum(max(prices[i+1]-prices[i], 0) for i in range(len(prices)-1))
+        """
+
 inputs = [
     [1],
     [2,2,2,2,2],
