@@ -28,12 +28,7 @@ class Solution:
         while temp.next:
             temp = temp.next
             length += 1
-        
-        # if length&1:
-        #     distance = length//2 + 1
-        # else:
-        #     distance = length//2 + 1
-        
+               
         distance = length//2
         temp = head
 

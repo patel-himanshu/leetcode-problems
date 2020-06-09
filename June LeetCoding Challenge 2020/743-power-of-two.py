@@ -29,3 +29,8 @@ class Solution:
                 flag = False
                 break
         return flag and count
+    
+        """ 
+        ================ Alternate method =====================
+        return n>0 and n&(n-1)==0
+        """
