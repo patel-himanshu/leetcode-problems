@@ -19,7 +19,7 @@ The above arrows point to positions where the corresponding bits are different.
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
         if x == y == 0: return 0
-        
+
         count = max(len(bin(x)[2:]), len(bin(y)[2:]))
         while x or y:
             # print(count)
@@ -28,4 +28,8 @@ class Solution:
             x = x>>1
             y = y>>1
         return count
+
+        """
+        return bin(x^y).count('1')
+        """
         
