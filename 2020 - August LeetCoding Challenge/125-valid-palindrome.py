@@ -20,7 +20,7 @@ class Solution:
         s = s.lower()
         p1, p2 = 0, len(s)-1
         
-        while p1 != len(s) and p2 != -1:
+        while p1 < p2:
             if not s[p1].isalnum(): 
                 p1 += 1
                 continue
